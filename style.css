@@ -168,6 +168,10 @@ input {
     right: var(--swiper-navigation-sides-offset, 40px);
     left: auto;
 }
+body.light-theme {
+    --footer-bg: var(--bg-footer-light);
+    --footer-text: var(--text-footer-light);
+}
 
 
 
@@ -274,6 +278,7 @@ input {
     height: 300px;
     display: flex;
     justify-content: space-evenly;
+    margin-top: 40px;
     
 }
 .footer_s {
@@ -326,4 +331,164 @@ input {
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.light-theme {
+    
+    color: #000000;
+}
+
+/* Тёмная тема */
+.dark-theme {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+/* Стили свича */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 56px;
+    height: 30px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+    margin-bottom: 5px;
+}
+
+.slider:before {
+    position: absolute;
+    height: 19px;
+    width: 19px;
+    left: 6px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    background-image: url(./foto/sun.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+input:checked + .slider::before {
+    content: "";
+    left: 4px;
+    background-image: url(./foto/moon.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+.footer {
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark {
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Стиль футера в светлой теме */
+.light-theme .dark {
+    background-color: white;
+    color: #333;
+}
+
+/* Стиль футера в тёмной теме */
+.dark-theme .dark {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.light-theme .footer {
+    background-color: rgb(239, 238, 238);
+    color: #333;
+}
+
+/* Стиль футера в тёмной теме */
+.dark-theme .footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+
+
+
+.product_button {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #2196F3;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #2196F3;
+    color: white;
+  }
+
+p:hover {
+    color: #2196F3;
+}
+.swiper_button {
+    cursor: pointer;
+  box-shadow: inset 0 0 0 0 #2196F3;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.footer_button {
+    cursor: pointer;
+  box-shadow: inset 0 0 0 0 #2196F3;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.slide_right2:hover {
+    box-shadow: inset 400px 0 0 0 white;
+    color: #2196F3;
+}
+
+.product:hover {
+    box-shadow: 1px 1px 60px 1px #2196F3;
+    border: 0.1px solid #2196F3;
+    zoom: 102%;
+}
