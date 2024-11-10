@@ -11,278 +11,344 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
 <body class="light-theme">
     <header>
-        <div class="header_wrapper">
-            <div class="left">
-                <ul class="nav">
-                    <li class="nav_item">
-                        <a href="" class="link_logo">
-                            Fuzzy
-                        </a>
-                    </li>
-                    <li class="nav_item"><a href="" class="link">
-                        Neuheiten
-                        </a></li>
-                    <li class="nav_item"><a href="" class="link">
-                        Damen
-                        </a></li>
-                    <li class="nav_item"><a href="" class="link">
-                        Herren
-                        </a></li>
-                        <li><div class=" navbar-expand-lg">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item dropdown">
-                                        <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Kategorien
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Trends</a></li>
-                                            <li><a class="dropdown-item" href="#">Fruhlings-Mode</a></li>
-                                            <li><a class="dropdown-item" href="#">Hochzeiten</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
+        <nav class="navigation">
+            <div class="header_wrapper">
+                <div class="left">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <ul class="nav">
+                        <li class="nav_item">
+                            <a href="" class="link_logo">
+                                Fuzzy
+                            </a>
+                        </li>
+                        <li class="nav_item"><a href="" class="link">
+                                Neuheiten
+                            </a></li>
+                        <li class="nav_item"><a href="" class="link">
+                                Damen
+                            </a></li>
+                        <li class="nav_item"><a href="" class="link">
+                                Herren
+                            </a></li>
+                        <li class="">
+                            <div class=" navbar-expand-lg">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <button class="btn  dropdown-toggle" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                Kategorien
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Trends</a></li>
+                                                <li><a class="dropdown-item" href="#">Fruhlings-Mode</a></li>
+                                                <li><a class="dropdown-item" href="#">Hochzeiten</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>                
-            </div>
-            <div class="right">
-                <div>
-                    <label class="switch">
-                        <input type="checkbox" id="theme-toggle">
-                        <span class="slider"></span>
-                    </label>
-                    <input type="text" id="inputtt" placeholder="Oversized Pullover" class="search">
-                    <label for="inputtt"><button class="button"><img src="./foto/search_g.svg" alt="" class="button_e"></button></label>
-                
-                    <a href=""><img src="./foto/9024006_user_circle_fill_icon.svg" alt="" class="header_icon1"></a>
-                    <a href=""><img src="./foto/wunschliste_g.svg" alt="" class="header_icon"></a>
-                    <a href=""><img src="./foto/Basket Icon.png" alt="" class="header_icon_basket"></a>
-            </div>
-        </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider"></span>
+                        </label>
+                        <input type="text" id="inputtt" placeholder="Oversized Pullover" class="search">
+                        <label for="inputtt"><button class="button"><img src="./foto/search_g.svg" alt=""
+                                    class="button_e"></button></label>
+
+                        <a href=""><img src="./foto/9024006_user_circle_fill_icon.svg" alt="" class="header_icon1"></a>
+                        <a href=""><img src="./foto/wunschliste_g.svg" alt="" class="header_icon"></a>
+                        <a href=""><img src="./foto/Basket Icon.png" alt="" class="header_icon_basket"></a>
+                    </div>
+                </div>
+        </nav>
     </header>
     <main>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./foto/C_women.png" alt="" class="slide_main">
-                <div class="wrapper dark">
-                <div class="container_main">
-                    <h2 class="main_title">Damen-Mode</h2>
-                    <p class="main_text">Die neuesten Cardigans fur den Herbst!</p>
-                    <form action="" target="_blank">
-                    <button class="swiper_button slide_right2">Zur Kollektion</button>
-                </form>
-                    
+                <div class="swiper-slide">
+                    <img src="./foto/C_women.png" alt="" class="slide_main">
+                    <div class="wrapper dark">
+                        <div class="container_main">
+                            <h2 class="main_title">Damen-Mode</h2>
+                            <p class="main_text">Die neuesten Cardigans fur den Herbst!</p>
+                            <form action="" target="_blank">
+                                <button class="swiper_button slide_right2">Zur Kollektion</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./foto/C_men.png" alt="" class="slide_main">
+                    <div class="wrapper dark">
+                        <div class="container_main">
+                            <h2 class="main_title">Männer-Mode</h2>
+                            <p class="main_text">Die neuesten Pullover für den Herbst!</p>
+                            <form action="" target="_blank">
+                                <button class="swiper_button slide_right2">Zur Kollektion</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./foto/C_kids.png" alt="" class="slide_main">
+                    <div class="wrapper dark">
+                        <div class="container_main">
+                            <h2 class="main_title">Kinder-Mode</h2>
+                            <p class="main_text">Die neuesten Cardigans fur den Herbst!</p>
+                            <form action="" target="_blank">
+                                <button class="swiper_button slide_right2">Zur Kollektion</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="./foto/C_acces.png" alt="" class="slide_main">
+                    <div class="wrapper dark">
+                        <div class="container_main">
+                            <h2 class="main_title">Acccesuares</h2>
+                            <p class="main_text">Die neuesten Cardigans fur den Herbst!</p>
+                            <form action="" target="_blank">
+                                <button class="swiper_button slide_right2">Zur Kollektion</button>
+                            </form>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-              <div class="swiper-slide"><img src="./foto/C_men.png" alt="" class="slide_main">
-                <div class="wrapper dark">
-                    <div class="container_main">
-                        <h2 class="main_title">Männer-Mode</h2>
-                        <p class="main_text">Die neuesten Pullover für den Herbst!</p>
-                        <form action="" target="_blank">
-                        <button class="swiper_button slide_right2">Zur Kollektion</button>
-                    </form>
-                        
-                    </div>
-                </div></div>
-              <div class="swiper-slide"><img src="./foto/C_kids.png" alt="" class="slide_main">
-                <div class="wrapper dark">
-                    <div class="container_main">
-                        <h2 class="main_title">Kinder-Mode</h2>
-                        <p class="main_text">Die neuesten Cardigans fur den Herbst!</p>
-                        <form action="" target="_blank">
-                        <button class="swiper_button slide_right2">Zur Kollektion</button>
-                    </form>
-                        
-                    </div>
-                </div></div>
-              <div class="swiper-slide"><img src="./foto/C_acces.png" alt="" class="slide_main">
-                <div class="wrapper dark">
-                    <div class="container_main">
-                        <h2 class="main_title">Acccesuares</h2>
-                        <p class="main_text">Die neuesten Cardigans fur den Herbst!</p>
-                        <form action="" target="_blank">
-                        <button class="swiper_button slide_right2">Zur Kollektion</button>
-                    </form>
-                        
-                    </div>
-                </div></div>
-            </div>
             <div class="sw">
-            <div><img src="./foto/ra.png" alt="" class="sswiper-button-next"></div>
-            <div><img src="/foto/la.png" alt="" class="sswiper-button-prev"></div>
-            <!-- <div class="swiper-pagination"></div> -->
+                <div><img src="./foto/ra.png" alt="" class="sswiper-button-next"></div>
+                <div><img src="/foto/la.png" alt="" class="sswiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
     </main id="main">
-    <div class="goods">
-       <div class="goods_wrapper">
-        <div class="product">
-            <div class="photo">
-                <a href=""><img src="./foto/h1.png" alt="" class="product_photo"></a>
+    <div class="mobile">
+        <div class="goods">
+            <div class="goods_wrapper">
+                <div class="product">
+                    <div class="photo">
+                        <a href=""><img src="./foto/h1.png" alt="" class="product_photo"></a>
+                    </div>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <p class="product_name">Hodie</p>
+                    </a>
+                    <div class="product_info">
+                        <form action="" target="_blank">
+                            <button class="product_button slide_right">Detailansicht</button>
+                        </form>
+                        <p class="prise">34,90 €</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="photo">
+                        <a href=""><img src="./foto/h2.png" alt="" class="product_photo"></a>
+                    </div>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <p class="product_name">Rundhalspullover - Creme</p>
+                    </a>
+                    <div class="product_info">
+                        <form action="" target="_blank">
+                            <button class="product_button slide_right">Detailansicht</button>
+                        </form>
+                        <p class="prise">55,49 €</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="photo">
+                        <a href=""><img src="./foto/h3.png" alt="" class="product_photo"></a>
+                    </div>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <p class="product_name">Sweeter-Grau</p>
+                    </a>
+                    <div class="product_info">
+                        <form action="" target="_blank">
+                            <button class="product_button slide_right">Detailansicht</button>
+                        </form>
+                        <p class="prise">19,95 €</p>
+                    </div>
+                </div>
             </div>
-            <a href="" style="color: black; text-decoration: none;"><p class="product_name">Hodie</p></a>
-            <div class="product_info">
-                <form action="" target="_blank">
-                    <button class="product_button slide_right">Detailansicht</button>
-                </form>
-                <p class="prise">34,90 €</p>
+            <div class="goods_wrapper">
+                <div class="product">
+                    <div class="photo">
+                        <a href=""><img src="./foto/t1.png" alt="" class="product_photo"></a>
+                    </div>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <p class="product_name">CELINEN</p>
+                    </a>
+                    <div class="product_info">
+                        <form action="" target="_blank">
+                            <button class="product_button slide_right">Detailansicht</button>
+                        </form>
+                        <p class="prise">69,90 €</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="photo">
+                        <a href=""><img src="./foto/t2.png" alt="" class="product_photo"></a>
+                    </div>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <p class="product_name">Wesley-Jeans</p>
+                    </a>
+                    <div class="product_info">
+                        <form action="" target="_blank">
+                            <button class="product_button slide_right">Detailansicht</button>
+                        </form>
+                        <p class="prise">39,95 €</p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="photo">
+                        <a href=""><img src="./foto/t3.png" alt="" class="product_photo"></a>
+                    </div>
+                    <a href="" style="color: black; text-decoration: none;">
+                        <p class="product_name">Kurt Jeans aus Trail Wash Denim</p>
+                    </a>
+                    <div class="product_info">
+                        <form action="" target="_blank">
+                            <button class="product_button slide_right">Detailansicht</button>
+                        </form>
+                        <p class="prise">85,99 €</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="product">
-            <div class="photo">
-                <a href=""><img src="./foto/h2.png" alt="" class="product_photo"></a>
-            </div>
-           <a href="" style="color: black; text-decoration: none;"><p class="product_name">Rundhalspullover - Creme</p></a>
-            <div class="product_info">
-                <form action="" target="_blank">
-                    <button class="product_button slide_right">Detailansicht</button>
-                </form>
-                <p class="prise">55,49 €</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="photo">
-                <a href=""><img src="./foto/h3.png" alt="" class="product_photo"></a>
-            </div>
-            <a href="" style="color: black; text-decoration: none;"><p class="product_name">Sweeter-Grau</p></a>
-            <div class="product_info">
-                <form action="" target="_blank">
-                    <button class="product_button slide_right">Detailansicht</button>
-                </form>
-                <p class="prise">19,95 €</p>
-            </div>
-        </div>
-       </div>
-       <div class="goods_wrapper">
-        <div class="product">
-            <div class="photo">
-                <a href=""><img src="./foto/t1.png" alt="" class="product_photo"></a>
-            </div>
-            <a href="" style="color: black; text-decoration: none;"><p class="product_name">CELINEN</p></a>
-            <div class="product_info">
-                <form action="" target="_blank">
-                    <button class="product_button slide_right">Detailansicht</button>
-                </form>
-                <p class="prise">69,90 €</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="photo">
-                <a href=""><img src="./foto/t2.png" alt="" class="product_photo"></a>
-            </div>
-            <a href="" style="color: black; text-decoration: none;"><p class="product_name">Wesley-Jeans</p></a>
-            <div class="product_info">
-                <form action="" target="_blank">
-                    <button class="product_button slide_right">Detailansicht</button>
-                </form>
-                <p class="prise">39,95 €</p>
-            </div>
-        </div>
-        <div class="product">
-            <div class="photo">
-                <a href=""><img src="./foto/t3.png" alt="" class="product_photo"></a>
-            </div>
-            <a href="" style="color: black; text-decoration: none;"><p class="product_name">Kurt Jeans aus Trail Wash Denim</p></a>
-            <div class="product_info">
-                <form action="" target="_blank">
-                    <button class="product_button slide_right">Detailansicht</button>
-                </form>
-                <p class="prise">85,99 €</p>
-            </div>
-        </div>
-       </div>
     </div>
 
 
     <div class="info footer">
         <div class="info_wrapper">
-            <p>24h Kundenservice</p>
-            <p>Versand nur 1,99€</p>
-            <p>Kostenlose Retouren</p>
-            <p>Sicheres Bestellen</p>
+            <p class="info_text">24h Kundenservice</p>
+            <p class="info_text">Versand nur 1,99€</p>
+            <p class="info_text">Kostenlose Retouren</p>
+            <p class="info_text">Sicheres Bestellen</p>
         </div>
     </div>
     <footer class="footer">
         <div class="footer1 footer">
-        <div class="footer_wrapper footer">
-            <ul class="footer_info">
-                <a href="" class="footer_title"><h2 class="footer_title">Kundenservice</h2></a>
-                <a href=""class="footer_text"><p class="footer_text">Service & Hilfe</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Kontaktformular</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Feedback</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Storefinder</p></a>
-            </ul>
-            <ul class="footer_info">
-                <a href=""class="footer_title"><h2 class="footer_title">Einfach Shoppen</h2></a>
-                <a href=""class="footer_text"><p class="footer_text">Großentabelle</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Pflegetipps</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Materialinformationen</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Verügbarkeit</p></a>
-            </ul>
-            <ul class="footer_info">
-                <a href=""class="footer_title"><h2 class="footer_title">Fuzzy</h2></a>
-                <a href=""class="footer_text"><p class="footer_text">Presse</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Jobs & Karriere</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Impressum</p></a>
-                <a href=""class="footer_text"><p class="footer_text">Datenschutz</p></a>
-            </ul>
-            <div class="contact">
-                <h2 class="footer_title">Newsteller bestellen</h2>
-                <p class="footer_text">Monatliche Angebote und Rabatte für Sie!</p>
-                <input type="text" placeholder="E-Mail" class="footer_input">
-                <button class="footer_button slide_right2">Anmelden</button>
+            <div class="footer_wrapper footer">
+                <ul class="footer_info">
+                    <a href="" class="footer_title">
+                        <h2 class="footer_title">Kundenservice</h2>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Service & Hilfe</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Kontaktformular</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Feedback</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Storefinder</p>
+                    </a>
+                </ul>
+                <ul class="footer_info">
+                    <a href="" class="footer_title">
+                        <h2 class="footer_title">Einfach Shoppen</h2>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Großentabelle</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Pflegetipps</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Materialinformationen</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Verügbarkeit</p>
+                    </a>
+                </ul>
+                <ul class="footer_info mcs mobile_wrapper">
+                    <a href="" class="footer_title">
+                        <h2 class="footer_title">Fuzzy</h2>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Presse</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Jobs & Karriere</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Impressum</p>
+                    </a>
+                    <a href="" class="footer_text">
+                        <p class="footer_text">Datenschutz</p>
+                    </a>
+                </ul>
+                <div class="contact ">
+                    <h2 class="footer_title">Newsteller bestellen</h2>
+                    <p class="footer_text">Monatliche Angebote und Rabatte für Sie!</p>
+                    <input type="text" placeholder="E-Mail" class="footer_input">
+                    <button class="footer_button slide_right2">Anmelden</button>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer2 footer">
-        <div class="footer2_wrapper">
-            <p class="footer2_text">© 2023 Fuzzy Clothes GmbH</p>
-            <ul class="footer_s">
-                <li class="footer_item"><a href=""><img src="./foto/Instagram Icon.png" alt="" class="footer_link"></a></li>
-                <li class="footer_item"><a href=""><img src="./foto/Twitter Bird Icon.png" alt="" class="footer_link"></a></li>
-                <li class="footer_item"><a href=""><img src="./foto/Facebook Logo Icon.png" alt="" class="footer_link"></a></li>
-            </ul>
+        <div class="footer2 footer">
+            <div class="footer2_wrapper">
+                <p class="footer2_text">© 2023 Fuzzy Clothes GmbH</p>
+                <ul class="footer_s">
+                    <li class="footer_item"><a href="">
+                            <svg class="i1">
+                                <use xlink:href="./foto/i1.svg#i1"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer_item"><a href="">
+                            <svg class="i2">
+                                <use xlink:href="./foto/i2.svg#i2"></use>
+                            </svg>
+                        </a></li>
+                    <li class="footer_item"><a href="">
+                        <svg class="i3">
+                            <use xlink:href="./foto/i3.svg#i3"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+            </div>
         </div>
-    </div>
     </footer>
-      <script src="switch.js"></script>
+    <script src="switch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        cssMode: true,
-        loop: true,
-        loopFillGroupWithBlank: true,
-        navigation: {
-          nextEl: ".sswiper-button-next",
-          prevEl: ".sswiper-button-prev",
-          
-          
-        },
-        pagination: {
-          el: ".swiper-pagination",
-        },
-        mousewheel: true,
-        keyboard: true,
-        autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      });
+        var swiper = new Swiper(".mySwiper", {
+            cssMode: true,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: ".sswiper-button-next",
+                prevEl: ".sswiper-button-prev",
+
+
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            mousewheel: true,
+            keyboard: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+        });
     </script>
 </body>
 
